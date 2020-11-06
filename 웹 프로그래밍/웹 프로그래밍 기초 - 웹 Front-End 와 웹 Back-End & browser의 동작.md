@@ -18,3 +18,11 @@
 ## browser의 동작2
 * ex. 사파리 브라우저에서 처리되는 webkit 렌더링 엔진의 처리과정
 
+![캡처](https://user-images.githubusercontent.com/23302973/98339748-90df7180-204f-11eb-98b0-efbfa483a828.PNG)
+
+[출처](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+
+* HTML을 해석해서 DOM Tree 만들고, CSS를 해석해서 CSS Tree를 만든다. -> 파싱 필요
+* DOM Tree 와 CSS Tree는 연관되어 있으므로 Render Tree로 조합된다.
+* 조합된 결과는 화면에 어떻게 배치할지 크기와 위치 정보를 담고 있다.
+* Render Tree 정보를 통해 화면에 어떤 부분에 어떻게 색칠할지 그리는 과정을 거친다.
